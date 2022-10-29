@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+h1.nav-logo {
+  font-size:calc(12px + 3vw);
+  
+}
+
+h2 {
+  font-size:calc(12px + 2vw);
+}
+
+h1.nav-logo, h2, h3, h3, h4, h5, h6 {
+  font-family: 'Josefin Slab', serif;;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.nav-bar h1 {
+  padding-top: .25rem;
+}
+
+.bar {
+  display: block;
+  margin: 5px auto;
+  height: 3px;
+  width: 25px;
+}
+
+.close-one {
+  height: 25px;
+  width: 3px;
+  margin-left: 11px;
+  transform: rotate(45deg);
+  Z-index: 1;
+}
+
+.close-two {
+  height: 25px;
+  width: 3px;
+  transform: rotate(90deg);
+  Z-index: 2;
+}
+
+.close-menu {
+  width: 25px;
+  height: 25px;
+}
+
+.bar, .close-one, .close-two {
+  background-color: black;
+  border-radius: 2px;
+}
+
+/* necessary for changes for active page on nav bar - i.e. clicked page while appear underlined */
+div.home li.home .nav-link, 
+div.saved-brands li.saved-brands .nav-link, 
+div.find-brands li.find-brands .nav-link, 
+div.checklist li.checklist .nav-link{
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+/* necessary to keep page options cetnered in nav bar */
+.nav-link {
+  padding-top: .5rem;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 4.3rem;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow:
+      0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+/* allows for dropdown menu to open */
+.nav-menu.show-menu {
+  left: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.nav-menu.hide-menu {
+  left: -100%;
+  background-color: none;
+}
+
+.nav-item {
+  margin: 1rem 0;
+}
+
+/*  change background color of button to match color of website background */
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+/* SMALL SCREEN - I.E. LAPTOP - STYLE CHANGES */
+@media (min-width: 769px) {
+  .nav-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      position: unset;
+      left: auto;
+      top: 0;
+      flex-direction: row;
+      background-color: none;
+      width: auto;
+      text-align: unset;
+      transition: 0;
+      box-shadow: none;
+  }
+
+  .nav-menu.show-menu {
+    left: -100;
+    background-color: transparent;
+  }
+  
+  .nav-item {
+      margin-left: 5rem;
+      padding-top: .25rem;
+  }
+  
+  .nav-link {
+      font-size: .75rem;
+  }
+  
+  /*  change background color of button to match color of website background */
+  .hamburger-menu {
+      display: none;
+      border: none;
+      background-color: white;
+  }
+}
