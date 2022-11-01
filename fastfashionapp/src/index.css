@@ -41,6 +41,16 @@ img {
  max-width: 50vw;
 }
 
+.text-center-vertical {
+  align-items: center;
+}
+
+.spacer {
+  height: 25vh;
+}
+.checklist-diagram {
+  width: 10vh;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
