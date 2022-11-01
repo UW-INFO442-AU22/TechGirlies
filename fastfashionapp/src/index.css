@@ -180,6 +180,16 @@ div.checklist li.checklist .nav-link{
   background-color: #E8FBF3;
 }
 
+.checklist-start  {
+  display: flex;
+  flex-wrap: wrap;
+}
+.checklist-item {
+  flex-basis: 50%;
+}
+
+
+
 /* SMALL SCREEN - I.E. LAPTOP - STYLE CHANGES */
 @media (min-width: 769px) {
   .nav-menu {
