@@ -4,9 +4,11 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './components/App';
 
+import IMPACTS from './data/impacts.json';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App />
+    <App impacts={IMPACTS} />
   </BrowserRouter>
 );

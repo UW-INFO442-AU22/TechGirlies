@@ -50,9 +50,7 @@ img {
 .spacer {
   height: 25vh;
 }
-.checklist-diagram {
-  width: 10vh;
-}
+
 /* NAVIGATION BAR STYLING */
 .nav-bar img {
   width: 50px;
@@ -170,14 +168,42 @@ div.checklist li.checklist .nav-link{
   padding-left: 2rem;
 }
 
-.center-with-image {
-  display: block;
-  margin: auto;
-  float: right;
-}
-
 .impacts {
   background-color: #E8FBF3;
+  padding: 1.5rem;
+}
+
+.impact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.impact {
+  padding: 1.5rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.impact img {
+  max-width: 20vw;
+}
+
+.impact h2 {
+  font-size: 1.5rem;
+  padding-top: .5rem;
+}
+
+em h2 {
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+
+.checklist-diagram {
+  width: 10vh;
 }
 
 .checklist-start  {
@@ -227,5 +253,29 @@ div.checklist li.checklist .nav-link{
       display: none;
       border: none;
       background-color: white;
+  }
+}
+
+@media (min-width: 481px) {
+  .impact {
+    width: 40vw;
+  }
+
+  .impact img {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .impact {
+    width: 20vw;
+  }
+
+  .impact img {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

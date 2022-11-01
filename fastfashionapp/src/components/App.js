@@ -5,10 +5,10 @@ import CheckList from './checklistPage.js';
 import FindBrands from './findBrandsPage.js';
 import SavedBrands from './savedBrandsPage';
 
-function App() {
+function App(props) {
   return (
     <Routes>
-      <Route path="/" element={<HomePage/>} />
+      <Route path="/" element={<HomePage impacts={props.impacts}/>} />
       <Route path="find-brands" element={<FindBrands/>} />
       <Route path="saved-brands" element={<SavedBrands />} />
       <Route path="checklist" element={<CheckList />} />
