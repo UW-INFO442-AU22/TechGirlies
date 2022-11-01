@@ -52,7 +52,7 @@ export default function Navigation(props){
     return(
         <header>
             <nav className="nav-bar">
-                <h1 className="nav-logo">Name TBD</h1>
+                <h1 className="nav-logo"><span><img src="./img/logo.png" alt="logo"></img></span>Name TBD</h1>
                 <button onClick={handleClick} type="button" className="hamburger-menu" alt="hamburger menu button. three horizontal lines stacked on eachother. once clicked to open the navigation options, hamburgermenu transitions to an X indicating to click again to leave navigation">
                     {navbarOpen ? (
                         <CloseIcon />

@@ -6,8 +6,15 @@
 }
 
 h1.nav-logo {
-  font-size:calc(12px + 3vw);
+  font-size:calc(12px + 1vw);
+  font-weight: bold;
   
+}
+.nav-link{
+  color:rgba(0, 0, 0)
+}
+.nav-link:hover {
+  color: black;
 }
 
 h2 {
@@ -29,6 +36,9 @@ li {
 
 a {
   text-decoration: none;
+}
+img {
+ max-width: 50vw;
 }
 
 .nav-bar {
