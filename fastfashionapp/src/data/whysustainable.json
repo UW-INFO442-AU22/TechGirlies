@@ -1,0 +1,20 @@
+[
+    {
+        "img":"./img/why_img1.png", 
+        "alt":"globe with people walking on it", 
+        "title":"Sustainable Clothing is Better for the Environment", 
+        "description":"Sustainable fashion has a largely positive impact on the environment and natural resources. Ethical designer brands often use green production techniques to reduce waste by reusing and repurposing existing materials."
+    },
+    {
+        "img":"./img/why_img2.png", 
+        "alt":"4 piece puzzle with people on and around it", 
+        "title":"Sustainable Fashion Supports Safer Working Conditions", 
+        "description":"Sustainable and eco-ethical brands often advocate for providing humane working conditions, health care and fair wages for their workers. We all want to feel great about our  clothes, and that includes feeling great about knowing under what conditions they were made."
+    },
+    {
+        "img":"./img/why_img3.png", 
+        "alt":"3 people, one sitting on a computer, one watering a plant, one holding a coin", 
+        "title":"Save Money by Buying Clothes That are Made to Last", 
+        "description":"Sustainable brands focus on quality, using materials and finishes that are made to last as well as being kind to the environment. In choosing sustainable brands that provide quality, you can reduce your waste as well as the amount of clothing that you buy (also saving you money)."
+    }
+]

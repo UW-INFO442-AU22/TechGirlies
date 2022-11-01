@@ -1,0 +1,32 @@
+[
+    {
+        "img_source": "./img/ResearchBrand.png", 
+        "title": "RESEARCH BRAND",
+        "description": "Is the company is green-certified? See who their suppliers and maufacturers are, and see what the media is saying about it. "
+    }, 
+    {
+        "img_source": "./img/TagMaterials.png", 
+        "title": "TAG & MATERIALS",
+        "description": "Check the tag to see if the garment is made out of sustainable materials, if it’s locally made, and how to care for it to make it last. "
+    }, 
+    {
+        "img_source": "./img/FabricSheerness.png", 
+        "title": "FABRIC SHEERNESS",
+        "description": "If you can hold a garment up to the light and can't see the outline of your hand through the material, it suggests that the garment will be more durable over time."
+    }, 
+    {
+        "img_source": "./img/DenimStiffness.png", 
+        "title": "DENIM STIFFNESS",
+        "description": "Check to see how stiff a pair of jeans are. High quality denim is usually heavier and a bit stiff at first because of the material's higher thread count."
+    }, 
+    {
+        "img_source": "./img/SeamsStitches.png", 
+        "title": "SEAMS & STITCHES",
+        "description": "Tighter, more frequent stitches usually make for a stronger seam. More durable clothing should usually have hardier stitches with no discernible gaps."
+    }, 
+    {
+        "img_source": "./img/StretchTest.png", 
+        "title": "STRETCH TEST",
+        "description": "High-quality clothing material usually has good \"recovery,\" which means that the fibers spring back into shape and maintain their form after being stretched. "
+    }
+]
