@@ -13,9 +13,14 @@ function ImpactCard(props) {
 
 export default function HomePage(props) {
     const impacts = props.impacts;
+    const whySustainable = props.whySustainable;
 
     const impactList = impacts.map((impact) => {
         return <ImpactCard key={impact.title} img={impact.img} title={impact.title} description={impact.description} />
+    })
+
+    const whySustainableList = whySustainable.map((reason) => {
+        return <WhyCard key={reason.title} img={reason.img} title={reason.title} description={reason.description} />
     })
 
     return(
