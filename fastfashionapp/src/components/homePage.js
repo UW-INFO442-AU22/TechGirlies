@@ -5,14 +5,14 @@ function ImpactCard(props) {
     return (
         <div className="impact">
             <img src={props.img} alt={props.alt} />
-            <h2>{props.title}</h2>
+            <em><h2>{props.title}</h2></em>
             <p>{props.description}</p>
         </div>
     )
 }
 
 export default function HomePage(props) {
-    const impacts = props.impacts
+    const impacts = props.impacts;
 
     const impactList = impacts.map((impact) => {
         return <ImpactCard key={impact.title} img={impact.img} title={impact.title} description={impact.description} />
