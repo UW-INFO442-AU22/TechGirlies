@@ -5,7 +5,7 @@
   color: black;
 }
 
-h1.nav-logo {
+.nav-logo h1 {
   font-size:calc(12px + 1vw);
   font-weight: bold;
   
@@ -21,7 +21,7 @@ h2 {
   font-size:calc(12px + 2vw);
 }
 
-h1.nav-logo, h2, h3, h3, h4, h5, h6 {
+.nav-logo h1, h2, h3, h3, h4, h5, h6 {
   font-family: 'Josefin Slab', serif;;
 }
 
@@ -37,8 +37,15 @@ li {
 a {
   text-decoration: none;
 }
+
+
 img {
  max-width: 50vw;
+}
+
+/* NAVIGATION BAR STYLING */
+.nav-bar img {
+  width: 50px;
 }
 
 .nav-bar {
@@ -49,7 +56,13 @@ img {
 }
 
 .nav-bar h1 {
-  padding-top: .25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-logo{
+  display: flex;
+  align-items: center;
 }
 
 .bar {
@@ -126,12 +139,35 @@ div.checklist li.checklist .nav-link{
   margin: 1rem 0;
 }
 
-/*  change background color of button to match color of website background */
 .hamburger-menu {
   display: block;
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+/* END NAVAIGATION BAR STYLING */
+
+/* HOME PAGE STYLING */
+.beginning-container {
+  display: flex;
+}
+
+.beginning-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.center-with-image {
+  display: block;
+  margin: auto;
+  float: right;
+}
+
+.impacts {
+  background-color: #E8FBF3;
 }
 
 /* SMALL SCREEN - I.E. LAPTOP - STYLE CHANGES */
