@@ -1,0 +1,6 @@
+[
+    {"img":"img/impact_img1_water.png", "alt":"water droplet", "title":"1. Water Usage", "description":"One kg of non-organic cotton takes over 2,000 liters of water to produce."},
+    {"img":"img/impact_img2_cry.png", "alt":"person crying", "title":"2. Human Cost", "description":"Most articles of clothing are made using exploited labor."},
+    {"img":"img/impact_img3_climate.png", "alt":"globe with thermometer", "title":"3. Greenhouse Gases", "description":"Producing clothes creates greenhouse gas emissions that contribute to climate change."},
+    {"img":"img/impact_img4_microplastics.png", "alt":"fish in ocean", "title":"4. Microplastics", "description":"Materials used in fast fashion release microplastics into the ocean."}
+]
