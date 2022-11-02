@@ -224,9 +224,24 @@ div.checklist li.checklist .nav-link{
   max-width: 40vw;
 }
 
+/* FIND BRANDS PAGE */
+.find-brands h1, .find-brands .brands-container {
+  margin: 1rem;
+}
 
+.find-brands .brands-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.brand {
+  margin: 1.5rem 1rem;
+  border-radius: 15px;
+  border: none;
+}
 
+/* CHEKCLIST PAGE */
 .checklist-diagram {
   width: 10vh;
 }
@@ -239,7 +254,20 @@ div.checklist li.checklist .nav-link{
   flex-basis: 50%;
 }
 
+/* IPAD AND TABLET SYTLE CHANGES */
+@media (min-width: 481px) {
+  .impact {
+    width: 40vw;
+  }
 
+  .impact img {
+    width: 50px;
+  }
+
+  .brand img {
+    width: 40vw;
+  }
+}
 
 /* SMALL SCREEN - I.E. LAPTOP - STYLE CHANGES */
 @media (min-width: 769px) {
@@ -279,19 +307,7 @@ div.checklist li.checklist .nav-link{
       border: none;
       background-color: white;
   }
-}
 
-@media (min-width: 481px) {
-  .impact {
-    width: 40vw;
-  }
-
-  .impact img {
-    width: 50px;
-  }
-}
-
-@media (min-width: 769px) {
   .impact {
     width: 20vw;
   }
@@ -300,5 +316,15 @@ div.checklist li.checklist .nav-link{
     width: 50px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .brand img {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  .brand img {
+      width: 20vw;
   }
 }

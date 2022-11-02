@@ -9,7 +9,7 @@ function App(props) {
   return (
     <Routes>
       <Route path="/" element={<HomePage impacts={props.impacts} whySustainable={props.whySustainable}/>} />
-      <Route path="find-brands" element={<FindBrands/>} />
+      <Route path="find-brands" element={<FindBrands brands={props.brands} />} />
       <Route path="saved-brands" element={<SavedBrands />} />
       <Route path="checklist" element={<CheckList />} />
     </Routes>

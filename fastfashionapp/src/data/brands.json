@@ -1,0 +1,14 @@
+[
+    {"brand":"Reformation", "img":"./img/Reformation.png", "alt":"Reformation brand", "price":""},
+    {"brand":"Outerknown", "img":"./img/Outerknown.png", "alt":"Outerknown brand", "price":""},
+    {"brand":"KOTN", "img":"./img/KOTN.png", "alt":"KOTN brand", "price":""},
+    {"brand":"Quince", "img":"./img/Quince.png", "alt":"Quince brand", "price":""},
+    {"brand":"ABLE", "img":"./img/ABLE.png", "alt":"ABLE brand", "price":""},
+    {"brand":"Aday", "img":"./img/Aday.png", "alt":"Aday brand", "price":""},
+    {"brand":"Sezane", "img":"./img/Sezane.png", "alt":"Sezane brand", "price":""},
+    {"brand":"Vetta", "img":"./img/Vetta.png", "alt":"Vetta brand", "price":""},
+    {"brand":"Boden", "img":"./img/Boden.png", "alt":"Boden brand", "price":""},
+    {"brand":"Toad&Co", "img":"./img/Toad&Co.png", "alt":"Toad&Co brand", "price":""},
+    {"brand":"Nube", "img":"./img/Nube.png", "alt":"Nube brand", "price":""},
+    {"brand":"Katla", "img":"./img/Katla.png", "alt":"Katla brand", "price":""}
+]
