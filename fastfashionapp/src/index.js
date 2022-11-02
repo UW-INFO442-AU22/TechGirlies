@@ -7,10 +7,11 @@ import App from './components/App';
 import IMPACTS from './data/impacts.json';
 import WHYSUSTAINABLE from './data/whysustainable.json';
 import BRANDS from './data/brands.json';
+import CHECKLIST from './data/checklist.json'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App impacts={IMPACTS} brands={BRANDS} whySustainable={WHYSUSTAINABLE} />
+    <App impacts={IMPACTS} brands={BRANDS} whySustainable={WHYSUSTAINABLE} checklist={CHECKLIST} />
   </BrowserRouter>
 );
