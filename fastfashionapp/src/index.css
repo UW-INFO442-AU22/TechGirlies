@@ -158,6 +158,7 @@ div.checklist li.checklist .nav-link{
 /* HOME PAGE STYLING */
 .beginning-container {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .beginning-text {
@@ -170,6 +171,7 @@ div.checklist li.checklist .nav-link{
 
 .impacts {
   background-color: #E8FBF3;
+  margin-bottom: 3rem;
   padding: 1.5rem;
 }
 
@@ -181,24 +183,47 @@ div.checklist li.checklist .nav-link{
 
 .impact {
   padding: 1.5rem;
-  display: block;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .impact img {
-  max-width: 20vw;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.impact h2 {
+.impact h3 {
   font-size: 1.5rem;
   padding-top: .5rem;
 }
 
-em h2 {
+.impact h3, .reason h3 {
   font-style: normal;
   font-weight: bold;
 }
+
+.reason-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.reason {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.reasons h2 {
+  text-align: center;
+}
+
+.reason img, .reason div {
+  max-width: 40vw;
+}
+
 
 
 
@@ -263,8 +288,6 @@ em h2 {
 
   .impact img {
     width: 50px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 

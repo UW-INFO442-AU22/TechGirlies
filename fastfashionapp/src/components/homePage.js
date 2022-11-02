@@ -5,10 +5,34 @@ function ImpactCard(props) {
     return (
         <div className="impact">
             <img src={props.img} alt={props.alt} />
-            <em><h2>{props.title}</h2></em>
+            <em><h3>{props.title}</h3></em>
             <p>{props.description}</p>
         </div>
     )
+}
+
+function WhyCard(props){
+    if (props.title == "Sustainable Fashion Supports Safer Working Conditions"){
+        return(
+            <div className="reason">
+                <div>
+                    <em><h3>{props.title}</h3></em>
+                    <p>{props.description}</p>
+                </div>
+                <img src={props.img} alt={props.alt} />
+            </div>
+        )
+    } else {
+        return(
+            <div className="reason">
+                <img src={props.img} alt={props.alt} />
+                <div>
+                    <em><h3>{props.title}</h3></em>
+                    <p>{props.description}</p>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default function HomePage(props) {
@@ -36,9 +60,15 @@ export default function HomePage(props) {
                     </div>
             </div>
             <div className="impacts">
-                <h1>Impacts of Fast Fashion</h1>
+                <h2>Impacts of Fast Fashion</h2>
                 <div className="impact-container">
                     {impactList}
+                </div>
+            </div>
+            <div className="reasons">
+                <h2>Why Should I Shop Sustainably?</h2>
+                <div className="reason-container">
+                    {whySustainableList}
                 </div>
             </div>
         </div>

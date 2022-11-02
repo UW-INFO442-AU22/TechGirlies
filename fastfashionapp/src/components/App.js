@@ -8,7 +8,7 @@ import SavedBrands from './savedBrandsPage';
 function App(props) {
   return (
     <Routes>
-      <Route path="/" element={<HomePage impacts={props.impacts} whysustainable={props.whySustainable}/>} />
+      <Route path="/" element={<HomePage impacts={props.impacts} whySustainable={props.whySustainable}/>} />
       <Route path="find-brands" element={<FindBrands/>} />
       <Route path="saved-brands" element={<SavedBrands />} />
       <Route path="checklist" element={<CheckList />} />
