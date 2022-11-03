@@ -10,7 +10,7 @@ function App(props) {
     <Routes>
       <Route path="/" element={<HomePage impacts={props.impacts} whySustainable={props.whySustainable}/>} />
       <Route path="find-brands" element={<FindBrands brands={props.brands} />} />
-      <Route path="saved-brands" element={<SavedBrands />} />
+      <Route path="saved-brands" element={<SavedBrands savedBrands={props.savedBrands} />} />
       <Route path="checklist" element={<CheckList rules={props.checklist} />} />
     </Routes>
   );
