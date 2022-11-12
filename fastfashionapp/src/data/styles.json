@@ -1,0 +1,6 @@
+[
+    {"style": "Cozy", "img": "/img/style-cozy.png", "recOne":"Toad & Co", "recOneImgs":["/img/Toad-1.png","/img/Toad-2.png","/img/Toad-3.png"], "recTwo":"Aday",  "recTwoImgs":["/img/aday-1.png","/img/aday-2.png","/img/aday-3.png"]},
+    {"style": "Academia", "img": "/img/style-academia.png", "recOne":"Able",  "recOneImgs":["/img/Able-1.png","/img/Able-2.png","/img/Able-3.png"], "recTwo":"KOTN",  "recTwoImgs":["/img/KOTN-1.png","/img/KOTN-2.png","/img/KOTN-3.png"]},
+    {"style": "Corporate", "img": "/img/style-corporate.png", "recOne":"Sezane",  "recOneImgs":["/img/Sezane-1.png","/img/Sezane-2.png","/img/Sezane-3.png"], "recTwo":"Quince",  "recTwoImgs":["/img/Quine-1.png","/img/Quince-2.png","/img/Quince-3.png"]},
+    {"style": "Floral", "img": "/img/style-floral.png", "recOne":"Reformation",  "recOneImgs":["/img/Reformation-1.png","/img/Reformation-2.png","/img/Reformation-3.png"], "recTwo":"Boden",  "recTwoImgs":["/img/Boden-1.png","/img/Boden-2.png","/img/Boden-3.png"]}
+]

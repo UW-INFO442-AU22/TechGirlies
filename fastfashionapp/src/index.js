@@ -8,12 +8,12 @@ import IMPACTS from './data/impacts.json';
 import WHYSUSTAINABLE from './data/whysustainable.json';
 import BRANDS from './data/brands.json';
 import CHECKLIST from './data/checklist.json';
-import SAVEDBRANDS from './data/savedBrands.json';
 import FINDSTYLES from './data/findStyles.json';
+import STYLES from './data/styles.json';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App savedBrands={SAVEDBRANDS} impacts={IMPACTS} brands={BRANDS} whySustainable={WHYSUSTAINABLE} checklist={CHECKLIST} genres={FINDSTYLES}/>
+    <App impacts={IMPACTS} brands={BRANDS} whySustainable={WHYSUSTAINABLE} checklist={CHECKLIST} styles={STYLES} genres={FINDSTYLES}/>
   </BrowserRouter>
 );

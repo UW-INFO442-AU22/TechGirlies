@@ -1,56 +1,103 @@
 import React from "react";
 import Footer from "./footer";
 import Navigation from "./navigation";
-import {useParams} from 'react-router-dom';
+import {useParams, Link} from 'react-router-dom';
 
 export default function GenrePage(props) {
+    const selectedStyle = props.selectedStyle;
     let urlParams = useParams();
     let genreType = urlParams.genreType; 
 
-    let genre =  props.genres.filter((genre) => {
+    let style =  props.genres.filter((genre) => {
         return genre.name === genreType;
     });
 
-    genre = genre[0];
-    if(!genre) {
+    style = style[0];
+    if(!style) {
         return (
             <h1>Genre not specified</h1>
         );
     }
 
-   
-    function BrandRow(props) {
-        console.log(props.name);
+    const recOneImgList = selectedStyle.recOneImgs.map((image) => {
         return (
-            <div className="row" key={props.name}>
-                <h2>{props.name}</h2>
-            </div>
-        );
-    }
-
-    let BrandsList = genre.brands.map((brand) => {
-       
+            <img src={image} className="suggestion-img"/>
+        )
+    })
+    const recTwoImgList = selectedStyle.recTwoImgs.map((image) => {
         return (
-            <BrandRow className="brand-row" name={brand} />
-        ); 
-    });
-    let imgSrc ="/img/"+genre.name.toLowerCase()+ ".png";
+            <img src={image} className="suggestion-img" />
+        )
+    })
 
-    return (
-        <div className="indv-genre-info" key={genre.name}>
-            <Navigation/>
-            <h1 className="px-4">{genre.name}</h1>
-            <div className="container">
-                <div className="col col-4">
-                    <img src={imgSrc} alt={genre.name}/>
+    return(
+        <div>
+            <Navigation />
+            <div className="indv-genre-info" key={selectedStyle.style}>
+                <div className="genre-header">
+                    <h1>These brands have {selectedStyle.style} clothing:</h1>
+                    <Link to="/find-styles" type="button" id="back-button">
+                        <img src="/img/backArrow.png" className="genre-img" alt="back arrow serving as a button"/>
+                    </Link>
                 </div>
-                <div className="col-6">
-                    {BrandsList}
+                <div className="genre-container">
+                    <div className="style-image">
+                    <img src={selectedStyle.img} />
+                    </div>
+                    <div className="recs-container">
+                        <div className="rec">
+                            <h2>{selectedStyle.recOne}</h2>
+                            <div className="rec-imgs">
+                                {recOneImgList}
+                            </div>
+                        </div>
+                        <div className="rec">
+                            <h2>{selectedStyle.recOne}</h2>
+                            <div className="rec-imgs">
+                                {recTwoImgList}
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
             <Footer />
+        </div>
+    )
+
+   
+    // function BrandRow(props) {
+    //     console.log(props.name);
+    //     return (
+    //         <div className="row" key={props.name}>
+    //             <h2>{props.name}</h2>
+    //         </div>
+    //     );
+    // }
+
+    // let BrandsList = genre.brands.map((brand) => {
+       
+    //     return (
+    //         <BrandRow className="brand-row" name={brand} />
+    //     ); 
+    // });
+    // let imgSrc ="/img/"+genre.name.toLowerCase()+ ".png";
+
+    // return (
+    //     <div className="indv-genre-info" key={genre.name}>
+    //         <Navigation/>
+    //         <h1 className="px-4">{genre.name}</h1>
+    //         <div className="container">
+    //             <div className="col col-4">
+    //                 <img src={imgSrc} alt={genre.name}/>
+    //             </div>
+    //             <div className="col-6">
+    //                 {BrandsList}
+    //             </div>
+    //         </div>
+    //         <Footer />
           
-        </div>);
-    }
+    //     </div>);
+}
 
 

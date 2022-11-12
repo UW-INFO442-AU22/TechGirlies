@@ -111,7 +111,7 @@ img {
 
 /* necessary for changes for active page on nav bar - i.e. clicked page while appear underlined */
 div.home li.home .nav-link, 
-div.saved-brands li.saved-brands .nav-link, 
+div.find-styles li.find-styles .nav-link, 
 div.find-brands li.find-brands .nav-link, 
 div.checklist li.checklist .nav-link{
   text-decoration: underline;
@@ -311,6 +311,81 @@ div.checklist li.checklist .nav-link{
   justify-content: space-evenly;
 }
 
+/* FIND STYLES PAGE STYLING */
+.find-styles {
+  margin-left: 1rem;
+}
+
+.style-button img {
+  max-width: 60vw;
+}
+
+.style-button {
+  border: none;
+  border-radius: 12px;
+  margin: 1rem;
+}
+
+
+.style-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+}
+
+/* GENRE PAGE STYLING */
+.genre-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
+
+.genre-header img {
+  height: 35px;
+  padding-right: 1rem;
+  margin-top: .6rem;
+}
+
+.indv-genre-info {
+  padding-left: 1rem;
+}
+
+.genre-img {
+  margin-left: 1rem;
+}
+
+.style-image img {
+  max-width: 80%;
+  max-height: auto;
+}
+
+.style-image {
+  width: 80%;
+}
+
+.genre-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.recs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestion-img {
+  padding: .75rem .5rem;
+}
+
+.rec {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
 /* CHEKCLIST PAGE */
 .checklist-diagram {
   width: 10vh;
@@ -358,6 +433,15 @@ div.checklist li.checklist .nav-link{
     padding-right: 3rem;
     justify-content: right;
   }
+
+  .style-image {
+    width: 40vw;
+  }
+
+  .style-button img {
+    max-width: 40vw;
+  }
+ 
 }
 
 /* SMALL SCREEN - I.E. LAPTOP - STYLE CHANGES */
@@ -415,6 +499,27 @@ div.checklist li.checklist .nav-link{
 
   .search-bar {
     padding-right: 5rem;
+  }
+
+  .genre-container {
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .style-image {
+    width: 30vw;
+  }
+
+  .recs-container {
+    width: 55vw
+  }
+
+  .suggestion-img {
+    width: 18.3vw;
+  }
+
+  .style-button img {
+    max-width: 20vw;
   }
 }
 
