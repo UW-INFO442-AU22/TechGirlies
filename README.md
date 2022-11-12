@@ -22,15 +22,6 @@ Our navigation bar allows users to:
 - Learn the true consequences effects of the fast fashion industry
 - Understand why specific brands of clothing are unsustainable
 - Discover sustainable brands to support moving forward 
-#### P1:
-- Carousel sort feature - allow users to prioritize cost efficiency, maximum sustainability, ease of purchase, etc.
-- “If you like ___ type of style/clothing you might like ____ brand” sustainable brand suggestions from corresponding to the type of clothing the user would like to purchase
-#### P2:
-- Possible additional feature: capsule closet suggestions (staples) - timeless pieces of clothing > trendy fast fashion
-- Ability to bookmark brands/styles a user likes
-- API or external database for clothing brand/options
 
-Of all the features you plan to include in your MVP, which one seems like the most challenging to develop, and why?
-We believe that P2, the capsule closet suggestion feature, will be the most challenging to develop. In order to link an external database and allow users to bookmark items, we likely would need to utilize back-end development with Firebase. We also would need to find a comprehensive database of clothing brand options, process and clean this data, and ensure that potential users of our web app across many fashion senses have an adequate number of options. 
 
 
