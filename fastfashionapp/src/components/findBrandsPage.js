@@ -6,11 +6,17 @@ import Navigation from "./navigation";
 export default function FindBrands(props) {
     const brands = props.brands;
     const [searchInput, setSearchInput] = useState("");
+    const [leaveBrowser, setLeaveBrowser] = useState(false);
+    const [brandUrl, setBrandUrl] = useState("");
     
     function BrandButton(props){
         const brand = props.brandData;
+        const handleBrandClick = () => {
+            setLeaveBrowser(true);
+            setBrandUrl(brand.url);
+        }
         return(
-            <button className="individualBrand" type="button" id="viewBrand">
+            <button className="individualBrand" type="button" id="viewBrand" onClick={handleBrandClick}>
                 <div className="brand-image">
                     <img src={brand.img} alt={brand.alt}></img>
                 </div>
@@ -31,6 +37,9 @@ export default function FindBrands(props) {
         brandList = brandList.filter((card) => card.key.toLowerCase().includes(searchInput.toLowerCase()));
     }
 
+    const handleClose = () => {
+        setLeaveBrowser(false);
+    }
     return(
         <div className="find-brands">
             <Navigation />
@@ -38,7 +47,14 @@ export default function FindBrands(props) {
             <div className="search-bar">
                 <input type="text" placeholder="Brand Name" onChange={handleChange} value={searchInput}/>
             </div>
-            <div className="brands-container">
+            <div className={`leave-browser ${leaveBrowser ? " show-popup" : ""}`}>
+                <p>Are You Sure You Want To Leave This Page?</p>
+                <div className="leave-container">
+                    <button className="leave-button one" type="button"><a href={brandUrl} target="_blank">Yes!</a></button>
+                    <button className="leave-button two" type="button" onClick={handleClose}>No!</button>
+                </div>
+            </div>
+            <div className="brands-container ">
                 {brandList}
             </div>
             <Footer />
