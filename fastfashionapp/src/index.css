@@ -272,6 +272,19 @@ div.checklist li.checklist .nav-link{
   padding-top: 1rem;
   width: 30%;
 }
+/* FIND STYLES */
+.genre-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 7%;
+}
+.card-title {
+  color: white;
+  font-weight: bold;
+  padding-top: auto;
+  filter: brightness(150%)
+}
+
 
 /* IPAD AND TABLET SYTLE CHANGES */
 @media (min-width: 481px) {

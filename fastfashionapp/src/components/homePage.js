@@ -13,7 +13,7 @@ function ImpactCard(props) {
 }
 
 function WhyCard(props){
-    if (props.title == "Sustainable Fashion Supports Safer Working Conditions"){
+    if (props.title === "Sustainable Fashion Supports Safer Working Conditions"){
         return(
             <div className="reason">
                 <div>
@@ -73,7 +73,7 @@ export default function HomePage(props) {
                 </div>
             </div>
             <div className="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0--DfC2Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0--DfC2Xk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             <Footer />
         </div>
