@@ -237,12 +237,19 @@ div.checklist li.checklist .nav-link{
 .search-bar {
   display: flex;
   justify-content: center;
-  /* padding-right: 1rem; */
 }
 
 /* FIND BRANDS PAGE */
 .find-brands h1, .find-brands .brands-container, .checklist h1 {
   margin: 1rem;
+}
+
+.find-brands {
+  background-color: none;
+}
+
+.find-brands.popup-open {
+  background-color: (128, 128, 128);
 }
 
 .find-brands .brands-container {
@@ -255,6 +262,53 @@ div.checklist li.checklist .nav-link{
   margin: 1.5rem 1rem;
   border-radius: 15px;
   border: none;
+}
+
+.leave-browser {
+  position: fixed;
+  top: -100%;
+  width: 50%;
+  height: 20%;
+  transition: 0.75s;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.leave-browser.show-popup {
+  top: 50%;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid grey;
+  z-index: 0;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leave-browser.show-popup p {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.leave-button {
+  padding: 0 1.5rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.leave-button a {
+  color: black;
+}
+
+.one {
+  margin-right: 2rem;
+}
+
+.leave-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* CHEKCLIST PAGE */
