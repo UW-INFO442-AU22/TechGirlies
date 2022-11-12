@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./footer";
 import Navigation from "./navigation";
 
 function ImpactCard(props) {
@@ -71,6 +72,10 @@ export default function HomePage(props) {
                     {whySustainableList}
                 </div>
             </div>
+            <div className="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0--DfC2Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <Footer />
         </div>
     )
 }

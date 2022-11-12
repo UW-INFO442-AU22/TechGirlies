@@ -67,7 +67,7 @@ export default function Navigation(props){
                 <ul className={`nav-menu ${navbarOpen ? " show-menu" : ""} ${navbarHide ? " hide-menu" : ""}`}>
                     <li className="nav-item home"><Link to="/" className="nav-link" onClick={() => closeMenu()}>Home</Link></li>
                     <li className="nav-item find-brands"><Link to="/find-brands" className="nav-link" onClick={() => closeMenu()}>Find Brands</Link></li>
-                    <li className="nav-item saved-brands"><Link to="/saved-brands" className="nav-link" onClick={() => closeMenu()}>Saved Brands</Link></li>
+                    {/* <li className="nav-item saved-brands"><Link to="/saved-brands" className="nav-link" onClick={() => closeMenu()}>Saved Brands</Link></li> */}
                     <li className="nav-item checklist"><Link to="/checklist" className="nav-link" onClick={() => closeMenu()}>Checklist</Link></li>
                 </ul>
             </nav>
