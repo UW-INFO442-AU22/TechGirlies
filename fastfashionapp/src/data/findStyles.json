@@ -1,7 +1,0 @@
-[
-    {"name":"Cozy", "img":"./img/cozy.png", "brands": ["Abie", "KOTN"]},
-    {"name":"Academia", "img":"./img/academia.png" , "brands": ["Toad & Co", "aday"]},
-    {"name":"Corporate", "img":"./img/corporate.png",  "brands": ["Sezane", "Quince"]},
-    {"name":"Floral", "img":"./img/floral.png",  "brands": ["Reformation", "Boden"]}
-   
-]
