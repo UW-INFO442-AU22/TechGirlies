@@ -11,15 +11,17 @@ However, despite the many problematic aspects of the industry, fast fashion bran
 
 ## About Conscious
 
-As part of an INFO 442 class project, Conscious was designed to combat the fast fashion by serving as an educational platform for sustainable style choices. By showcasing the long-term payoff of investing in high-quality, long-lasting clothing, Conscious encourages its users to be more responsible in their clothing consumption, reduce their environmental footprint, and ensure that their purchases do not contibute to the exploitation of others. 
+As part of an INFO 442 class project, Conscious was designed to combat fast fashion by serving as an educational platform for sustainable style choices. By showcasing the long-term payoff of investing in high-quality, long-lasting clothing, Conscious encourages its users to be more responsible in their clothing consumption, reduce their environmental footprint, and ensure that their purchases do not contibute to the exploitation of others. 
 
 ### Features:
+
 #### Responsive Navigation Bar
-- 
-- “Are your clothes sustainable” check-list/information page to allow consumers to change their behavior when looking at clothes
-- Research-based information (background) regarding the effects of the fast fashion industry on the environment
-- Why specifically ____ brands/types of clothing are unsustainable
-- Carousel or display of general brands/websites that feature and support sustainable fashion
+
+Our navigation bar allows users to:
+- Self-assess the sustainability of their current fashion choices using a check-list
+- Learn the true consequences effects of the fast fashion industry
+- Understand why specific brands of clothing are unsustainable
+- Discover sustainable brands to support moving forward 
 #### P1:
 - Carousel sort feature - allow users to prioritize cost efficiency, maximum sustainability, ease of purchase, etc.
 - “If you like ___ type of style/clothing you might like ____ brand” sustainable brand suggestions from corresponding to the type of clothing the user would like to purchase
