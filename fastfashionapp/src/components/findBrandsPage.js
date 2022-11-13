@@ -35,13 +35,13 @@ export default function FindBrands(props) {
     
     if(searchInput.length > 0) {
         brandList = brandList.filter((card) => card.key.toLowerCase().includes(searchInput.toLowerCase()));
-        if(brandList.length === 0){
-            return (
-                <div>
-                    <p>There are no Brands Matching That Name!</p>
-                </div>
-            );
-        }
+        // if(brandList.length === 0){
+        //     return (
+        //         <div>
+        //             <p>There are no Brands Matching That Name!</p>
+        //         </div>
+        //     );
+        // }
     }
     
 
