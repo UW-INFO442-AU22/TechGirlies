@@ -15,7 +15,7 @@ function App(props) {
       <Route path="find-brands" element={<FindBrands brands={props.brands} />} />
       {/* <Route path="saved-brands" element={<SavedBrands savedBrands={props.savedBrands} />} /> */}
       <Route path="find-styles" element={<FindStyles setSelectedStyle={setSelectedStyle} styles={props.styles} genres={props.genres} /> }/>
-      <Route path="style/:genreType" element={<GenrePage styles={props.styles} selectedStyle={selectedStyle} genres={props.genres}/>}/>
+      <Route path="style/:genreType" element={<GenrePage styles={props.styles} selectedStyle={selectedStyle}/>}/>
       <Route path="checklist" element={<CheckList rules={props.checklist} />} />
       <Route path="/" element={<HomePage impacts={props.impacts} whySustainable={props.whySustainable}/>} />
     </Routes>

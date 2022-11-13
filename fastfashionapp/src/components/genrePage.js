@@ -8,8 +8,8 @@ export default function GenrePage(props) {
     let urlParams = useParams();
     let genreType = urlParams.genreType; 
 
-    let style =  props.genres.filter((genre) => {
-        return genre.name === genreType;
+    let style =  props.styles.filter((genre) => {
+        return genre.style === genreType;
     });
 
     style = style[0];
@@ -19,30 +19,30 @@ export default function GenrePage(props) {
         );
     }
 
-    const recOneImgList = selectedStyle.recOneImgs.map((image) => {
+    const recOneImgList = style.recOneImgs.map((image) => {
         return (
-            <img src={image} className="suggestion-img"/>
+            <img src={image.img} className="suggestion-img" alt={image.alt}/>
         )
     })
-    const recTwoImgList = selectedStyle.recTwoImgs.map((image) => {
+    const recTwoImgList = style.recTwoImgs.map((image) => {
         return (
-            <img src={image} className="suggestion-img" />
+            <img src={image.img} className="suggestion-img" alt={image.alt} />
         )
     })
 
     return(
         <div>
             <Navigation />
-            <div className="indv-genre-info" key={selectedStyle.style}>
+            <div className="indv-genre-info" key={style.style}>
                 <div className="genre-header">
-                    <h1>These brands have {selectedStyle.style} clothing:</h1>
+                    <h1>These brands have {style.style} clothing:</h1>
                     <Link to="/find-styles" type="button" id="back-button">
                         <img src="/img/backArrow.png" className="genre-img" alt="back arrow serving as a button"/>
                     </Link>
                 </div>
                 <div className="genre-container">
                     <div className="style-image">
-                    <img src={selectedStyle.img} />
+                    <img src={style.img} alt={style.style}/>
                     </div>
                     <div className="recs-container">
                         <div className="rec">
