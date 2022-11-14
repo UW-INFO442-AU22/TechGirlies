@@ -17,7 +17,21 @@ As part of an INFO 442 class project, Conscious was designed to combat fast fash
 
 Our navigation bar displays the four pages of our app, utilizing interactive styling to clearly indicate what page the user is on.
 
-#### 
+#### Home Page
+
+The Home Page provides information about the problem space that inspired the creation of Concious: fast fashion. A key feature of this page is the embedded YouTube video that explains the problematic aspects of fast fashion and convincingly advocates for sustainable style choices. 
+
+#### Find Brands
+
+This page displays a collection of sustainable brands and allows users to directly navigate to these brands' sites by clicking on its respective label. Users can also utilize the search bar to search for specific brands. 
+
+#### Find Styles
+
+The Find Styles page, similar to a Pinterest board, allows users to search for sustainable brands that correlate with their specific sense of style. This enables our app to appeal to wide population of diverse personal styles. 
+
+#### Checklist
+
+The checklist allows users to actively consider their consumption choices and identify characteristics of sustainable clothing. This serves as a useful tool for users to continuously refer back to when making purchases, ensuring that they have all the information they need to make sustainable choices. 
 
 
 
