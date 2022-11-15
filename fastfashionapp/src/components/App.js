@@ -16,7 +16,7 @@ function App(props) {
       {/* <Route path="saved-brands" element={<SavedBrands savedBrands={props.savedBrands} />} /> */}
       <Route path="find-styles" element={<FindStyles styles={props.styles} genres={props.genres} /> }/>
       <Route path="style/:genreType" element={<GenrePage styles={props.styles} leaveBrowser={leaveBrowser} setLeaveBrowser={setLeaveBrowser} />}/>
-      <Route path="checklist" element={<CheckList rules={props.checklist} />} />
+      <Route path="checklist" element={<CheckList rules={props.checklist} materials={props.materials} />} />
       <Route path="/" element={<HomePage impacts={props.impacts} whySustainable={props.whySustainable}/>} />
     </Routes>
   );

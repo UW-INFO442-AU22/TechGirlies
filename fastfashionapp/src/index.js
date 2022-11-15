@@ -9,10 +9,11 @@ import WHYSUSTAINABLE from './data/whysustainable.json';
 import BRANDS from './data/brands.json';
 import CHECKLIST from './data/checklist.json';
 import STYLES from './data/styles.json';
+import MATERIALS from "./data/materials.json";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App impacts={IMPACTS} brands={BRANDS} whySustainable={WHYSUSTAINABLE} checklist={CHECKLIST} styles={STYLES} />
+    <App impacts={IMPACTS} brands={BRANDS} whySustainable={WHYSUSTAINABLE} checklist={CHECKLIST} styles={STYLES} materials={MATERIALS}/>
   </BrowserRouter>
 );

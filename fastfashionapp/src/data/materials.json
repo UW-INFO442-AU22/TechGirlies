@@ -1,0 +1,32 @@
+[
+    {
+        "img_source": "./img/plains.png", 
+        "title": "ORGANIC COTTON",
+        "description": "Cotton is one the most common fabrics used to make textiles. Cotton is known for its softness, durability, and breathability. It is easy to take care of and easy to clean. Chances are not just your clothes but your sheets, towels, and other items are made from cotton. Try and search for clothes that use organic cotton. Organic cotton is made without chemicals and these manufacturers try to conserve as well using less water when putting producing the fabric."
+    }, 
+    {
+        "img_source": "./img/flowers.png", 
+        "title": "ORGANIC HEMP",
+        "description": "Hemp is one of the most sustainable fibers out there. Hemp grows with little water and does not need the help of chemicals and pesticides. Organic hemp is also biodegradable making hemp a great environmentally friendly option."
+    }, 
+    {
+        "img_source": "./img/treev2.png", 
+        "title": "RECYCLED POLYESTER",
+        "description": "Recycled polyester is made by taking used materials such as plastic water bottles and spinning it into polyester fibers. Although still not the most sustainable fabric, recycled polyester does use significantly less energy consumption and does remove less waste which would otherwise end up in landfills."
+    }, 
+    {
+        "img_source": "./img/seedling.png", 
+        "title": "BAMBOO",
+        "description": "Bamboo is another sustainable option. The bamboo grows quickly without the need for fertilizer and generates its own roots, not needing to be planted. In comparison to cotton, bamboo does not require as much water or pesticides, reducing harmful environmental affect."
+    }, 
+    {
+        "img_source": "./img/trees.png", 
+        "title": "TENCELL",
+        "description": "Tencel also known as lyocell, is another very sustainable fabric. The tencel fabric is made from wood cellulose making it a regenerated fabric. The natural fibers of tencel are compostable and biodegradable."
+    }, 
+    {
+        "img_source": "./img/sunflowers.png", 
+        "title": "VEGAN LEATHER",
+        "description": "Vegan leather is an artificial leather substitute that looks and performs the same way as regular leather. There have been many innovations in vegan leather materials that are sustainable such as pineapple leaves, mushrooms, cactus, cork, apple peels, recycled plastic and more. "
+    }
+]

@@ -17,14 +17,38 @@ export default function Checklist(props) {
        return ChecklistItems(item);
     }); 
 
+    const materials = props.materials.map((item) => {
+        return ChecklistItems(item);
+    })
+
     return(
-        <div className="checklist">
-            <Navigation />
-            <h1 className="">Are Your Clothes Sustainable?</h1>
-            <div className="container checklist-start">
-                {checklist}
+        <div>
+            <div className="checklist">
+                <Navigation />
+                <h1 className="">Are Your Clothes Sustainable?</h1>
+                <div className="container checklist-start">
+                    {checklist}
+                </div>
+                
+            </div>
+
+            <br/><br/>
+            <div className="reasons">
+                <h2>How Do I Make my Wardrobe More Sustainable?</h2>
+                <div className="reason-container">
+                    <div className="reason">
+                        <img src="img/checklist_page.jpg" alt="woman holding clothes"/>
+                        <div>
+                            <em><h3>What Materials Should I Use?</h3></em>
+                        </div>
+                    </div>
+                </div>
+                <div className="container checklist-start">
+                    {materials}
+                </div>
             </div>
             <Footer />
         </div>
+       
     )
 }

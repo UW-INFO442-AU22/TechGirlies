@@ -42,7 +42,7 @@ export default function GenrePage(props) {
             <img type="button" onClick={handleClick} src={image.img} className="suggestion-img" alt={image.alt} />
         )
     })
-    console.log(style);
+    
 
     return(
         <div>
