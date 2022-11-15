@@ -68,6 +68,7 @@ export default function Navigation(props){
                     <li className="nav-item home"><Link to="/" className="nav-link" onClick={() => closeMenu()}>Home</Link></li>
                     <li className="nav-item find-brands"><Link to="/find-brands" className="nav-link" onClick={() => closeMenu()}>Find Brands</Link></li>
                     <li className="nav-item find-styles"><Link to="/find-styles" className="nav-link" onClick={() => closeMenu()}>Find Styles</Link></li>
+                    <li className="nav-item what-materials"><Link to="/what-material" className="nav-link" onClick={() => closeMenu()}>Materials</Link></li>
                     <li className="nav-item checklist"><Link to="/checklist" className="nav-link" onClick={() => closeMenu()}>Checklist</Link></li>
                 </ul>
             </nav>
