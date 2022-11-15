@@ -24,14 +24,14 @@ export default function GenrePage(props) {
 
     const recOneImgList = style.recOneImgs.map((image) => {
         const handleClick = () => {
-            setUrl(style.recOneUrl);
+            setUrl(image.url);
             setLeaveBrowser(true);
         }
 
         return (
             <img type="button" onClick={handleClick} src={image.img} className="suggestion-img" alt={image.alt}/>
         )
-    })
+    });
     const recTwoImgList = style.recTwoImgs.map((image) => {
         const handleClick = () => {
             setUrl(style.recTwoUrl);
@@ -41,9 +41,7 @@ export default function GenrePage(props) {
         return (
             <img type="button" onClick={handleClick} src={image.img} className="suggestion-img" alt={image.alt} />
         )
-    })
-    
-
+    });
     return(
         <div>
             <Navigation />
