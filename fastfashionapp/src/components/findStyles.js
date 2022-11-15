@@ -10,7 +10,7 @@ export default function FindStyles(props) {
     const navigate = useNavigate();
 
     function callNavigate(link) {
-        navigate(link)
+        navigate(link);
     }
     
     // ADD ALTS FOR IMAGES IN STYLES.JSON
@@ -26,7 +26,6 @@ export default function FindStyles(props) {
         function handleClick() {
             let link = "/style/" + genre.style;
             callNavigate(link);
-            setSelectedStyle(genre);
         }
     }
 

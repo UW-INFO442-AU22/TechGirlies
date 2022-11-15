@@ -10,9 +10,9 @@
         ],
         "recTwo": "Aday",
         "recTwoImgs": [
-            {"img": "/img/Aday-1.png", "url":"https://www.thisisaday.com/collections/sweaters-sweatshirts/products/like-a-boss-pullover-sage", "alt": "green turtleneck"},
-            {"img": "/img/Aday-2.png", "url":"https://www.thisisaday.com/collections/sweaters-sweatshirts/products/like-a-fleece", "alt": "white turtleneck"},
-            {"img": "/img/Aday-3.png", "url":"https://www.thisisaday.com/collections/all/products/all-weather-cardigan-nori?_pos=1&_fid=2179a3042&_ss=c", "alt": "green ribbed cardigan"}
+            {"img": "/img/aday-1.png", "url":"https://www.thisisaday.com/collections/sweaters-sweatshirts/products/like-a-boss-pullover-sage", "alt": "green turtleneck"},
+            {"img": "/img/aday-2.png", "url":"https://www.thisisaday.com/collections/sweaters-sweatshirts/products/like-a-fleece", "alt": "white turtleneck"},
+            {"img": "/img/aday-3.png", "url":"https://www.thisisaday.com/collections/all/products/all-weather-cardigan-nori?_pos=1&_fid=2179a3042&_ss=c", "alt": "green ribbed cardigan"}
         ]
     },
     {
