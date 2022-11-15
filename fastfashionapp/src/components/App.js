@@ -9,13 +9,13 @@ import FindStyles from './findStyles';
 import GenrePage from "./genrePage";
 
 function App(props) {
-  const [selectedStyle, setSelectedStyle] = useState([]);
+  const [leaveBrowser, setLeaveBrowser] = useState(false);
   return (
     <Routes>
-      <Route path="find-brands" element={<FindBrands brands={props.brands} />} />
+      <Route path="find-brands" element={<FindBrands leaveBrowser={leaveBrowser} setLeaveBrowser={setLeaveBrowser} brands={props.brands} />} />
       {/* <Route path="saved-brands" element={<SavedBrands savedBrands={props.savedBrands} />} /> */}
-      <Route path="find-styles" element={<FindStyles setSelectedStyle={setSelectedStyle} styles={props.styles} genres={props.genres} /> }/>
-      <Route path="style/:genreType" element={<GenrePage styles={props.styles} selectedStyle={selectedStyle}/>}/>
+      <Route path="find-styles" element={<FindStyles styles={props.styles} genres={props.genres} /> }/>
+      <Route path="style/:genreType" element={<GenrePage styles={props.styles} leaveBrowser={leaveBrowser} setLeaveBrowser={setLeaveBrowser} />}/>
       <Route path="checklist" element={<CheckList rules={props.checklist} />} />
       <Route path="/" element={<HomePage impacts={props.impacts} whySustainable={props.whySustainable}/>} />
     </Routes>

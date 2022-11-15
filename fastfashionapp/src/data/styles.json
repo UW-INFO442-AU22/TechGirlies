@@ -3,12 +3,14 @@
         "style": "Cozy",
         "img": "/img/style-cozy.png",
         "recOne": "Toad & Co",
+        "recOneUrl": "https://www.toadandco.com/",
         "recOneImgs": [
             {"img": "/img/Toad-1.png", "alt": "brown fleece sweater"},
             {"img": "/img/Toad-2.png", "alt": "white knit sleeveless sweater"},
             {"img": "/img/Toad-3.png", "alt": "blue knit sweater"}
         ],
         "recTwo": "Aday",
+        "recTwoUrl": "https://www.thisisaday.com/",
         "recTwoImgs": [
             {"img": "/img/Aday-1.png", "alt": "green turtleneck"},
             {"img": "/img/Aday-2.png", "alt": "white turtleneck"},
@@ -19,12 +21,14 @@
         "style": "Academia",
         "img": "/img/style-academia.png",
         "recOne": "Able",
+        "recOneUrl": "https://www.ableclothing.com/",
         "recOneImgs": [
             {"img": "/img/Able-1.png", "alt": "brown jumper"},
             {"img": "/img/Able-2.png", "alt": "grey plaid blazer"},
             {"img": "/img/Able-3.png", "alt": "brown ribbed pants"}
         ],
         "recTwo": "KOTN",
+        "recTwoUrl": "https://kotn.com/",
         "recTwoImgs": [
             {"img": "/img/KOTN-1.png", "alt": "brown blazer"},
             {"img": "/img/KOTN-2.png", "alt": "grey two-piece blazer skirt set"},
@@ -35,12 +39,14 @@
         "style": "Corporate",
         "img": "/img/style-corporate.png",
         "recOne": "Sezane",
+        "recOneUrl": "https://www.sezane.com/us",
         "recOneImgs": [
             {"img": "/img/Sezane-1.png", "alt": "black wool coat"},
             {"img": "/img/Sezane-2.png", "alt": "blue button-up shirt"},
             {"img": "/img/Sezane-3.png", "alt": "brown pea coat"}
         ],
         "recTwo": "Quince",
+        "recTwoUrl": "https://www.onequince.com/",
         "recTwoImgs": [
             {"img": "/img/Quince-1.png", "alt": "grey wool coat"},
             {"img": "/img/Quince-2.png", "alt": "white silk button-up"},
@@ -51,12 +57,14 @@
         "style": "Floral",
         "img": "/img/style-floral.png",
         "recOne": "Reformation",
+        "recOneUrl": "https://www.thereformation.com/",
         "recOneImgs": [
             {"img": "/img/Reformation-1.png", "alt": "blue floral skirt"},
             {"img": "/img/Reformation-2.png", "alt": "black floral party dress"},
             {"img": "/img/Reformation-3.png", "alt": "white floral dress"}
         ],
         "recTwo": "Boden",
+        "recTwoUrl": "https://www.bodenusa.com/en-us",
         "recTwoImgs": [
             {"img": "/img/Boden-1.png", "alt": "blue floral spagheti strap dress"},
             {"img": "/img/Boden-2.png", "alt": "bpurple floral maxi dress"},

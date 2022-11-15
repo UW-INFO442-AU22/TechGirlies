@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./footer";
 import Navigation from "./navigation";
 import {useParams, Link} from 'react-router-dom';
+import { LeavePage } from "./findBrandsPage.js";
 
 export default function GenrePage(props) {
-    const selectedStyle = props.selectedStyle;
+    const setLeaveBrowser = props.setLeaveBrowser;
+    const leaveBrowser = props.leaveBrowser;
+    const [url, setUrl] = useState("");
     let urlParams = useParams();
     let genreType = urlParams.genreType; 
 
@@ -20,15 +23,26 @@ export default function GenrePage(props) {
     }
 
     const recOneImgList = style.recOneImgs.map((image) => {
+        const handleClick = () => {
+            setUrl(style.recOneUrl);
+            setLeaveBrowser(true);
+        }
+
         return (
-            <img src={image.img} className="suggestion-img" alt={image.alt}/>
+            <img type="button" onClick={handleClick} src={image.img} className="suggestion-img" alt={image.alt}/>
         )
     })
     const recTwoImgList = style.recTwoImgs.map((image) => {
+        const handleClick = () => {
+            setUrl(style.recTwoUrl);
+            setLeaveBrowser(true);
+        }
+        
         return (
-            <img src={image.img} className="suggestion-img" alt={image.alt} />
+            <img type="button" onClick={handleClick} src={image.img} className="suggestion-img" alt={image.alt} />
         )
     })
+    console.log(style);
 
     return(
         <div>
@@ -46,58 +60,25 @@ export default function GenrePage(props) {
                     </div>
                     <div className="recs-container">
                         <div className="rec">
-                            <h2>{selectedStyle.recOne}</h2>
+                            <h2>{style.recOne}</h2>
                             <div className="rec-imgs">
                                 {recOneImgList}
                             </div>
                         </div>
                         <div className="rec">
-                            <h2>{selectedStyle.recOne}</h2>
+                            <h2>{style.recTwo}</h2>
                             <div className="rec-imgs">
                                 {recTwoImgList}
                             </div>
                         </div>
                     </div>
+                    <LeavePage leaveBrowser={leaveBrowser} setLeaveBrowser={setLeaveBrowser} brandUrl={url} />
                 </div>
                 
             </div>
             <Footer />
         </div>
     )
-
-   
-    // function BrandRow(props) {
-    //     console.log(props.name);
-    //     return (
-    //         <div className="row" key={props.name}>
-    //             <h2>{props.name}</h2>
-    //         </div>
-    //     );
-    // }
-
-    // let BrandsList = genre.brands.map((brand) => {
-       
-    //     return (
-    //         <BrandRow className="brand-row" name={brand} />
-    //     ); 
-    // });
-    // let imgSrc ="/img/"+genre.name.toLowerCase()+ ".png";
-
-    // return (
-    //     <div className="indv-genre-info" key={genre.name}>
-    //         <Navigation/>
-    //         <h1 className="px-4">{genre.name}</h1>
-    //         <div className="container">
-    //             <div className="col col-4">
-    //                 <img src={imgSrc} alt={genre.name}/>
-    //             </div>
-    //             <div className="col-6">
-    //                 {BrandsList}
-    //             </div>
-    //         </div>
-    //         <Footer />
-          
-    //     </div>);
 }
 
 
