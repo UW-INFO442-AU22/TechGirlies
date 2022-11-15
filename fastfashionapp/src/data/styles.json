@@ -3,72 +3,64 @@
         "style": "Cozy",
         "img": "/img/style-cozy.png",
         "recOne": "Toad & Co",
-        "recOneUrl": "https://www.toadandco.com/",
         "recOneImgs": [
-            {"img": "/img/Toad-1.png", "alt": "brown fleece sweater"},
-            {"img": "/img/Toad-2.png", "alt": "white knit sleeveless sweater"},
-            {"img": "/img/Toad-3.png", "alt": "blue knit sweater"}
+            {"img": "/img/Toad-1.png", "url":"https://www.toadandco.com/products/wilde-mock-neck-sweater-fawn?variant=40290448146480", "alt": "brown fleece sweater"},
+            {"img": "/img/Toad-2.png", "url":"https://www.toadandco.com/products/bianca-sweater-vest-natural?variant=40290447228976", "alt": "white knit sleeveless sweater"},
+            {"img": "/img/Toad-3.png", "url":"https://www.toadandco.com/products/wilde-mock-neck-sweater-glacier?variant=40290447294512", "alt": "blue knit sweater"}
         ],
         "recTwo": "Aday",
-        "recTwoUrl": "https://www.thisisaday.com/",
         "recTwoImgs": [
-            {"img": "/img/Aday-1.png", "alt": "green turtleneck"},
-            {"img": "/img/Aday-2.png", "alt": "white turtleneck"},
-            {"img": "/img/Aday-3.png", "alt": "green ribbed cardigan"}
+            {"img": "/img/Aday-1.png", "url":"https://www.thisisaday.com/collections/sweaters-sweatshirts/products/like-a-boss-pullover-sage", "alt": "green turtleneck"},
+            {"img": "/img/Aday-2.png", "url":"https://www.thisisaday.com/collections/sweaters-sweatshirts/products/like-a-fleece", "alt": "white turtleneck"},
+            {"img": "/img/Aday-3.png", "url":"https://www.thisisaday.com/collections/all/products/all-weather-cardigan-nori?_pos=1&_fid=2179a3042&_ss=c", "alt": "green ribbed cardigan"}
         ]
     },
     {
         "style": "Academia",
         "img": "/img/style-academia.png",
         "recOne": "Able",
-        "recOneUrl": "https://www.ableclothing.com/",
         "recOneImgs": [
-            {"img": "/img/Able-1.png", "alt": "brown jumper"},
-            {"img": "/img/Able-2.png", "alt": "grey plaid blazer"},
-            {"img": "/img/Able-3.png", "alt": "brown ribbed pants"}
+            {"img": "/img/Able-1.png", "url":"https://www.ableclothing.com/collections/sweaters/products/jana-patterned-pullover", "alt": "brown jumper"},
+            {"img": "/img/Able-2.png", "url":"https://www.ableclothing.com/collections/jackets-1/products/elma-structured-blazer", "alt": "grey plaid blazer"},
+            {"img": "/img/Able-3.png", "url":"https://www.ableclothing.com/collections/bottoms/products/mabel-corduroy-cigarette-pant", "alt": "brown ribbed pants"}
         ],
         "recTwo": "KOTN",
-        "recTwoUrl": "https://kotn.com/",
         "recTwoImgs": [
-            {"img": "/img/KOTN-1.png", "alt": "brown blazer"},
-            {"img": "/img/KOTN-2.png", "alt": "grey two-piece blazer skirt set"},
-            {"img": "/img/KOTN-3.png", "alt": "brown slacks"}
+            {"img": "/img/KOTN-1.png", "url":"https://kotn.com/products/womens-fine-knit-jacket?colour=dark-olive&size=xs", "alt": "brown blazer"},
+            {"img": "/img/KOTN-2.png", "url":"https://kotn.com/products/womens-cropped-jacket?colour=pine-bark-plaid&size=xs", "alt": "grey two-piece blazer skirt set"},
+            {"img": "/img/KOTN-3.png", "url":"https://kotn.com/products/womens-pleated-panel-trouser?colour=ochre&size=xs", "alt": "brown slacks"}
         ]
     },
     {
         "style": "Corporate",
         "img": "/img/style-corporate.png",
         "recOne": "Sezane",
-        "recOneUrl": "https://www.sezane.com/us",
         "recOneImgs": [
-            {"img": "/img/Sezane-1.png", "alt": "black wool coat"},
-            {"img": "/img/Sezane-2.png", "alt": "blue button-up shirt"},
-            {"img": "/img/Sezane-3.png", "alt": "brown pea coat"}
+            {"img": "/img/Sezane-1.png", "url":"https://www.sezane.com/us/product/christie-jacket/black#size-16", "alt": "black wool coat"},
+            {"img": "/img/Sezane-2.png", "url":"https://www.sezane.com/us/product/tomboy-shirt/blue#size-2", "alt": "blue button-up shirt"},
+            {"img": "/img/Sezane-3.png", "url":"https://www.sezane.com/us/product/johnson-coat/camel#size-2", "alt": "brown pea coat"}
         ],
         "recTwo": "Quince",
-        "recTwoUrl": "https://www.onequince.com/",
         "recTwoImgs": [
-            {"img": "/img/Quince-1.png", "alt": "grey wool coat"},
-            {"img": "/img/Quince-2.png", "alt": "white silk button-up"},
-            {"img": "/img/Quince-3.png", "alt": "charcoal wide-leg pants"}
+            {"img": "/img/Quince-1.png", "url":"https://www.onequince.com/women/knit-blazer?color=charcoal", "alt": "grey wool coat"},
+            {"img": "/img/Quince-2.png", "url":"https://www.onequince.com/women/silk/silk-notch-collar-blouse?color=ivory&gender=women&tracker=collection__Long%20Sleeve", "alt": "white silk button-up"},
+            {"img": "/img/Quince-3.png", "url":"https://www.onequince.com/women/women-s-stretch-crepe-pleated-wide-leg-pant?color=black&gender=women&tracker=collection__Pants", "alt": "charcoal wide-leg pants"}
         ]
     },
     {
         "style": "Floral",
         "img": "/img/style-floral.png",
         "recOne": "Reformation",
-        "recOneUrl": "https://www.thereformation.com/",
         "recOneImgs": [
-            {"img": "/img/Reformation-1.png", "alt": "blue floral skirt"},
-            {"img": "/img/Reformation-2.png", "alt": "black floral party dress"},
-            {"img": "/img/Reformation-3.png", "alt": "white floral dress"}
+            {"img": "/img/Reformation-1.png", "url":"https://www.thereformation.com/products/zoe-skirt/1303173SOE.html?dwvar_1303173SOE_color=SOE", "alt": "blue floral skirt"},
+            {"img": "/img/Reformation-2.png", "url":"https://www.thereformation.com/products/lucky-dress/1303039PRM.html?dwvar_1303039PRM_color=PRM", "alt": "black floral party dress"},
+            {"img": "/img/Reformation-3.png", "url":"https://www.thereformation.com/products/kourtney-dress/1306182CSW.html?dwvar_1306182CSW_color=CSW", "alt": "white floral dress"}
         ],
         "recTwo": "Boden",
-        "recTwoUrl": "https://www.bodenusa.com/en-us",
         "recTwoImgs": [
-            {"img": "/img/Boden-1.png", "alt": "blue floral spagheti strap dress"},
-            {"img": "/img/Boden-2.png", "alt": "bpurple floral maxi dress"},
-            {"img": "/img/Boden-3.png", "alt": "blue floral button up shirt"}
+            {"img": "/img/Boden-1.png", "url":"https://www.bodenusa.com/en-us/elena-midi-slip-dress-french-navy-floral-terrace/sty-d0227-nvy?cat=C1_S2_G4", "alt": "blue floral spagheti strap dress"},
+            {"img": "/img/Boden-2.png", "url":"https://www.bodenusa.com/en-us/tiered-jersey-maxi-tea-dress-navy-pretty-paradise/sty-d0281-nvy", "alt": "purple floral maxi dress"},
+            {"img": "/img/Boden-3.png", "url":"https://www.bodenusa.com/en-us/elena-midi-slip-dress-french-navy-floral-terrace/sty-d0227-nvy?cat=C1_S2_G4", "alt": "blue floral button up shirt"}
         ]
     }
 ]

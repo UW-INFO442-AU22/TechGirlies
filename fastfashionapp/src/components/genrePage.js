@@ -24,7 +24,7 @@ export default function GenrePage(props) {
 
     const recOneImgList = style.recOneImgs.map((image) => {
         const handleClick = () => {
-            setUrl(style.recOneUrl);
+            setUrl(image.url);
             setLeaveBrowser(true);
         }
 
