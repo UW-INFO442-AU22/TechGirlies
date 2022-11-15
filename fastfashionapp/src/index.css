@@ -103,7 +103,8 @@ img {
 div.home li.home .nav-link, 
 div.find-styles li.find-styles .nav-link, 
 div.find-brands li.find-brands .nav-link, 
-div.checklist li.checklist .nav-link{
+div.checklist li.checklist .nav-link,
+div.what-materials li.return-materials .nav-link{
   text-decoration: underline;
   font-size: 1rem;
 }
