@@ -6,7 +6,7 @@ export default function Materials(props) {
     function ChecklistItems(item) {
         return (
             <div className="col checklist-item">
-                <img className="checklist-diagram" alt="" src={item.img_source}/>
+                <img className="materials-diagram" alt="" src={item.img_source}/>
                 <h3>{item.title}</h3>
                 <h5>{item.description}</h5>
             </div>
@@ -20,10 +20,10 @@ export default function Materials(props) {
     return(
         <div className="what-materials">
             <Navigation/>
-            <div classname="reasons">
-                <h2>How Do I Make my Wardrobe More Sustainable?</h2>
-                <div classname="reason-container">
-                    <div classname="reason">
+            <div className="reasons px-2">
+                <h1 className="px-2">How Do I Make my Wardrobe More Sustainable?</h1>
+                {/* <div className="reason-container">
+                    <div className="reason">
                         <img src="img/checklist_page.jpg" alt="woman holding clothes"/>
                         <div>
                             <em>
@@ -31,11 +31,13 @@ export default function Materials(props) {
                             </em>
                         </div>
                     </div>
-                </div>
-                <div classname="container checklist-start">
+                </div> */}
+                
+            </div>
+            <br/>
+            <div className="container checklist-start">
                     {materials}
                 </div>
-            </div>
             <Footer />
         </div>
        

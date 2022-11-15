@@ -384,6 +384,11 @@ div.what-materials li.what-materials .nav-link{
   filter: brightness(150%)
 }
 
+/* MATERIALS PAGE */
+.materials-diagram {
+  width: 20vh;
+}
+
 
 /* IPAD AND TABLET SYTLE CHANGES */
 @media (min-width: 481px) {

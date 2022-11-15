@@ -24,7 +24,7 @@ export default function Checklist(props) {
     return(
         <div className="checklist">
             <Navigation />
-            <h1 className="">Are Your Clothes Sustainable?</h1>
+            <h1 className="px-2">Are Your Clothes Sustainable?</h1>
             <div className="container checklist-start">
                 {checklist}
             </div>
