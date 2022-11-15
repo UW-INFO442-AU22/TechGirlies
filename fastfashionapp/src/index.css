@@ -13,8 +13,9 @@
 .nav-link{
   color:rgba(0, 0, 0)
 }
+
 .nav-link:hover {
-  color: black;
+  color: darkgreen;
 }
 
 h2 {
@@ -47,10 +48,6 @@ img {
  max-width: 50vw;
 }
 
-.text-center-vertical {
-  align-items: center;
-}
-
 .spacer {
   height: 25vh;
 }
@@ -61,20 +58,13 @@ img {
 }
 
 .nav-bar {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 1.5rem;
 }
 
 .nav-bar h1 {
   margin: 1rem;
   padding: 0;
-}
-
-.nav-logo{
-  display: flex;
-  align-items: center;
 }
 
 .bar {
@@ -118,18 +108,36 @@ div.checklist li.checklist .nav-link{
   font-size: 1rem;
 }
 
-/* necessary to keep page options cetnered in nav bar */
-.nav-link {
+/* necessary to keep page options centered in nav bar */
+.nav-link, .impact h3 {
   padding-top: .5rem;
 }
 
-.nav-menu {
+.leave-browser, .nav-menu{
   position: fixed;
+}
+
+/* eliminating major redundancy in common styling */
+.nav-bar, .nav-logo, .beginning-container, .beginning-text, .impact-container, .impact, .reason-container, .reason, .video-container, .search-bar, .find-brands .brands-container, .leave-browser.show-popup, .leave-container, .style-container, .genre-header, .recs-container, .genre-container, .rec, .checklist-start, .genre-container {
+  display: flex;
+}
+
+.nav-menu, .beginning-text, .impact, .reason-container, .leave-browser.show-popup, .recs-container, .rec {
+  flex-direction: column;
+}
+
+.nav-menu, .reasons h2, .leave-browser.show-popup p, .text-center-vertical, .nav-bar {
+  text-align: center;
+}
+
+.text-center-vertical, .nav-bar, .nav-logo, .beginning-text, .reason, .leave-browser.show-popup {
+  align-items: center;
+}
+
+.nav-menu {
   left: -100%;
   top: 4.3rem;
-  flex-direction: column;
   width: 100%;
-  text-align: center;
   transition: 0.3s;
   box-shadow:
       0 10px 27px rgba(0, 0, 0, 0.05);
@@ -161,15 +169,11 @@ div.checklist li.checklist .nav-link{
 
 /* HOME PAGE STYLING */
 .beginning-container {
-  display: flex;
   margin-bottom: 2rem;
 }
 
 .beginning-text {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-left: 2rem;
 }
 
@@ -180,15 +184,12 @@ div.checklist li.checklist .nav-link{
 }
 
 .impact-container {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .impact {
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
 }
 
 .impact img {
@@ -199,7 +200,6 @@ div.checklist li.checklist .nav-link{
 
 .impact h3 {
   font-size: 1.5rem;
-  padding-top: .5rem;
 }
 
 .impact h3, .reason h3 {
@@ -207,35 +207,23 @@ div.checklist li.checklist .nav-link{
   font-weight: bold;
 }
 
-.reason-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .reason {
-  display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
   margin: 2rem 0;
 }
 
-.reasons h2 {
-  text-align: center;
-}
 
 .reason img, .reason div {
   max-width: 40vw;
 }
 
 .video-container {
-  display: flex;
   justify-content: center;
   padding-bottom: 3rem;
 }
 
 .search-bar {
-  display: flex;
   justify-content: center;
 }
 
@@ -253,7 +241,6 @@ div.checklist li.checklist .nav-link{
 }
 
 .find-brands .brands-container {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -265,7 +252,6 @@ div.checklist li.checklist .nav-link{
 }
 
 .leave-browser {
-  position: fixed;
   top: -100%;
   width: 50%;
   height: 20%;
@@ -281,14 +267,10 @@ div.checklist li.checklist .nav-link{
   border: 1px solid grey;
   z-index: 0;
   overflow-y: auto;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .leave-browser.show-popup p {
-  text-align: center;
   padding: 0 1rem;
 }
 
@@ -307,7 +289,6 @@ div.checklist li.checklist .nav-link{
 }
 
 .leave-container {
-  display: flex;
   justify-content: space-evenly;
 }
 
@@ -328,7 +309,6 @@ div.checklist li.checklist .nav-link{
 
 
 .style-container {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 5rem;
@@ -336,7 +316,6 @@ div.checklist li.checklist .nav-link{
 
 /* GENRE PAGE STYLING */
 .genre-header {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 3.5rem;
@@ -366,14 +345,8 @@ div.checklist li.checklist .nav-link{
 }
 
 .genre-container {
-  display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.recs-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .suggestion-img {
@@ -381,8 +354,6 @@ div.checklist li.checklist .nav-link{
 }
 
 .rec {
-  display: flex;
-  flex-direction: column;
   margin: 1rem 0;
 }
 
@@ -392,7 +363,6 @@ div.checklist li.checklist .nav-link{
 }
 
 .checklist-start  {
-  display: flex;
   flex-wrap: wrap;
 }
 .checklist-item {
@@ -403,7 +373,6 @@ div.checklist li.checklist .nav-link{
 }
 /* FIND STYLES */
 .genre-container {
-  display: flex;
   flex-wrap: wrap;
   padding-left: 7%;
 }
