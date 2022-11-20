@@ -3,6 +3,7 @@ import Footer from "./footer";
 import Navigation from "./navigation";
 
 export default function Materials(props) {
+    // ChecklistItems function forms individual checklist item with proper formatting
     function ChecklistItems(item) {
         return (
             <div className="col checklist-item">
@@ -12,7 +13,9 @@ export default function Materials(props) {
             </div>
         )
     }
-    
+
+    // materials variable represents the list version of each item in the props.materials object
+    // for each item in props.material, helper method ChecklistItems is called and then the formatted item is returned
     const materials = props.materials.map((item) => {
         return ChecklistItems(item);
     })
@@ -21,23 +24,11 @@ export default function Materials(props) {
         <div className="what-materials">
             <Navigation/>
             <div className="reasons px-2">
-                <h1 className="px-2">How Do I Make my Wardrobe More Sustainable?</h1>
-                {/* <div className="reason-container">
-                    <div className="reason">
-                        <img src="img/checklist_page.jpg" alt="woman holding clothes"/>
-                        <div>
-                            <em>
-                                <h3>What Materials Should I Use?</h3>
-                            </em>
-                        </div>
-                    </div>
-                </div> */}
-                
+                <h1 className="px-2">How Do I Make my Wardrobe More Sustainable?</h1>           
             </div>
-            <br/>
             <div className="container checklist-start">
-                    {materials}
-                </div>
+                {materials}
+            </div>
             <Footer />
         </div>
        

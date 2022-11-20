@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./footer";
 import Navigation from "./navigation";
 
+// ImpactCard function creates in individual instance of a impact in the correct format
 function ImpactCard(props) {
     return (
         <div className="impact">
@@ -12,7 +13,9 @@ function ImpactCard(props) {
     )
 }
 
+// WhyCard function creates in individual instance of a reason in the correct format
 function WhyCard(props){
+    // conditional statmenet necessary for variation in styling depending on the props.title
     if (props.title === "Sustainable Fashion Supports Safer Working Conditions"){
         return(
             <div className="reason">
@@ -23,7 +26,7 @@ function WhyCard(props){
                 <img src={props.img} alt={props.alt} />
             </div>
         )
-    } else {
+    } else { // default styling
         return(
             <div className="reason">
                 <img src={props.img} alt={props.alt} />
@@ -40,10 +43,12 @@ export default function HomePage(props) {
     const impacts = props.impacts;
     const whySustainable = props.whySustainable;
 
+    // impactList is created by mapping through the impacts file and returning an impactCard for every object in the file
     const impactList = impacts.map((impact) => {
         return <ImpactCard key={impact.title} img={impact.img} title={impact.title} description={impact.description} />
     })
 
+    // whySustainableList is created by mapping through the whySustainable file and returning a WhyCard for every object in the file
     const whySustainableList = whySustainable.map((reason) => { 
         return <WhyCard key={reason.title} img={reason.img} title={reason.title} description={reason.description} />
     })

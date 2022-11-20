@@ -1,6 +1,6 @@
-
 import React from "react";
 
+// created seperate footer component to reduce redundancy within pages
 export default function Footer(){
     return(
         <footer>

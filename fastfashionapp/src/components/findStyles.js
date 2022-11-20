@@ -13,13 +13,12 @@ export default function FindStyles(props) {
         navigate(link);
     }
     
-    // ADD ALTS FOR IMAGES IN STYLES.JSON
     function GenreCard(props){
         const genre = props.genre;
         return (
             <button type="button" className="style-button" onClick={handleClick}>
                 <div className="style-selection">
-                    <img src={genre.img}></img>
+                    <img src={genre.img} alt={genre.alt}></img>
                 </div>
             </button>
         )

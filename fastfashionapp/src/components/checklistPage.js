@@ -3,6 +3,7 @@ import Footer from "./footer";
 import Navigation from "./navigation";
 
 export default function Checklist(props) {
+    // ChecklistItems function forms individual checklist item with proper formatting
     function ChecklistItems(item) {
         return (
             <div className="col checklist-item">
@@ -13,13 +14,11 @@ export default function Checklist(props) {
         )
     }
     
+    // checklist variable represents the CheckList version of each item in the props.rules object
+    // for each item in props.rules, helper method ChecklistItems is called and then the formatted item is returned
     const checklist = props.rules.map((item) => {
        return ChecklistItems(item);
-    }); 
-
-    const materials = props.materials.map((item) => {
-        return ChecklistItems(item);
-    })
+    });
 
     return(
         <div className="checklist">
