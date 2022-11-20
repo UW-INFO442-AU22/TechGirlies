@@ -58,8 +58,8 @@ export default function HomePage(props) {
             <Navigation />
             <div className="beginning-container">
                     <div className="beginning-text">
-                        <h1>Find Sustainable Brands Made to Last</h1>
-                        <h3 className="lead">Browse our website to find sustainable brands and to learn more about  the environmental effects of the fast fashion industry.</h3>
+                        <h2>Find Sustainable Brands Made to Last</h2>
+                        <body className="lead">Browse our website to find sustainable brands and to learn more about  the environmental effects of the fast fashion industry.</body>
                     </div>
                     <div className="beginning-img">
                         <img src="./img/home_page_pic.png" alt="two cartoon people putting sustainable clothes on a hanger"></img>
