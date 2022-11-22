@@ -5,23 +5,32 @@ import {useParams, Link} from 'react-router-dom';
 import { LeavePage } from "./findBrandsPage.js";
 
 export default function GenrePage(props) {
+
+    // page variables and state for url parameter
     const setLeaveBrowser = props.setLeaveBrowser;
     const leaveBrowser = props.leaveBrowser;
     const [url, setUrl] = useState("");
     let urlParams = useParams();
+
+    // selecting the parameter for the url, specified as "genreType"
     let genreType = urlParams.genreType; 
 
+
+    // filtering through the JSON file for the styleName that matches the genre
     let style =  props.styles.filter((genre) => {
         return genre.style === genreType;
     });
 
+    // selecting the first item from the list (dealing with duplicates or multiples)
     style = style[0];
     if(!style) {
         return (
+            // if the style does not exist, return an empty error div
             <h1>Genre not specified</h1>
         );
     }
 
+    // navigate to the page by clicking on the image for the first reccommendation
     const recOneImgList = style.recOneImgs.map((image) => {
         const handleClick = () => {
             setUrl(image.url);
@@ -32,6 +41,8 @@ export default function GenrePage(props) {
             <img type="button" onClick={handleClick} src={image.img} className="suggestion-img" alt={image.alt}/>
         )
     });
+
+    // navigate to the page by clicking on the image for the second reccommendation
     const recTwoImgList = style.recTwoImgs.map((image) => {
         const handleClick = () => {
             setUrl(style.recTwoUrl);
@@ -42,6 +53,8 @@ export default function GenrePage(props) {
             <img type="button" onClick={handleClick} src={image.img} className="suggestion-img" alt={image.alt} />
         )
     });
+
+    // return the page 
     return(
         <div>
             <Navigation />
