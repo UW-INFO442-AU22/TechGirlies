@@ -127,12 +127,20 @@ div.what-materials li.what-materials .nav-link{
   flex-direction: column;
 }
 
-.nav-menu, .reasons h2, .leave-browser.show-popup p, .text-center-vertical, .nav-bar {
+.nav-menu, .reasons h2, .leave-browser.show-popup p, .text-center-vertical, .nav-bar, .learnmore {
   text-align: center;
 }
 
 .text-center-vertical, .nav-bar, .nav-logo, .beginning-text, .reason, .leave-browser.show-popup {
   align-items: center;
+}
+
+.beginning-text{
+  margin-left: 2rem;
+}
+
+.lead{
+  margin-top: 1rem;
 }
 
 .nav-menu {
@@ -187,10 +195,16 @@ div.what-materials li.what-materials .nav-link{
 .impact-container {
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .impact {
   padding: 1.5rem;
+}
+
+.impacts-title{
+  margin-top: 1.5rem;
+  margin-left: 2rem;
 }
 
 .impact img {
@@ -200,7 +214,7 @@ div.what-materials li.what-materials .nav-link{
 }
 
 .impact h3 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .impact h3, .reason h3 {
@@ -216,10 +230,29 @@ div.what-materials li.what-materials .nav-link{
 
 
 .reason img, .reason div {
-  max-width: 40vw;
+  max-width: 35vw;
+}
+
+.reason div{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.reason h3{
+  margin-bottom: 3rem;
+}
+
+.reason-container{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.learnmore{
+  margin-top: 3rem;
 }
 
 .video-container {
+  margin-top: 3rem;
   justify-content: center;
   padding-bottom: 3rem;
 }
@@ -443,12 +476,12 @@ div.what-materials li.what-materials .nav-link{
   }
   
   .nav-item {
-      margin-left: 5rem;
+      margin-left: 2rem;
       padding-top: .25rem;
   }
   
   .nav-link {
-      font-size: .75rem;
+      font-size: 1rem;
   }
   
   /*  change background color of button to match color of website background */

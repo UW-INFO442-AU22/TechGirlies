@@ -24,7 +24,7 @@ export default function Materials(props) {
         <div className="what-materials">
             <Navigation/>
             <div className="reasons px-2">
-                <h1 className="px-2">How Do I Make my Wardrobe More Sustainable?</h1>           
+                <h1 className="px-5">How Do I Make my Wardrobe More Sustainable?</h1>           
             </div>
             <div className="container checklist-start">
                 {materials}
