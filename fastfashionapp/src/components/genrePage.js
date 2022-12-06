@@ -38,7 +38,7 @@ export default function GenrePage(props) {
         }
 
         return (
-            <img type="button" onClick={handleClick} src={image.img} className="suggestion-img" alt={image.alt}/>
+            <img type="button" onClick={handleClick} src={image.img} key={image.alt} className="suggestion-img" alt={image.alt}/>
         )
     });
 
@@ -50,7 +50,7 @@ export default function GenrePage(props) {
         }
         
         return (
-            <img type="button" onClick={handleClick} src={image.img} className="suggestion-img" alt={image.alt} />
+            <img type="button" onClick={handleClick} src={image.img} key={image.alt} className="suggestion-img" alt={image.alt} />
         )
     });
 

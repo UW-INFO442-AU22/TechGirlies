@@ -59,10 +59,10 @@ export default function HomePage(props) {
             <div className="beginning-container">
                     <div className="beginning-text">
                         <h2>Find Sustainable Brands Made to Last</h2>
-                        <body className="lead">Browse our website to find sustainable brands and to learn more about  the environmental effects of the fast fashion industry.</body>
+                        <p className="lead">Browse our website to find sustainable brands and to learn more about  the environmental effects of the fast fashion industry.</p>
                     </div>
                     <div className="beginning-img">
-                        <img src="./img/home_page_pic.png" alt="two cartoon people putting sustainable clothes on a hanger"></img>
+                        <img className="home-pic" src="./img/home_page_pic.png" alt="two cartoon people putting sustainable clothes on a hanger"></img>
                     </div>
             </div>
             <div className="impacts">
@@ -84,7 +84,6 @@ export default function HomePage(props) {
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0--DfC2Xk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </div>
-            
             <Footer />
         </div>
     )

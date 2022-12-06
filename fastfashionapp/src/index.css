@@ -8,12 +8,8 @@
 .nav-logo h1 {
   font-size:calc(12px + 1vw);
   font-weight: bold;
+  margin: 1 1 0 1;
 }
-
-.logo-img{
-  width: 150%;
-}
-
 
 .nav-link{
   color:rgba(0, 0, 0)
@@ -53,7 +49,7 @@ footer {
   padding: .75rem 1rem;
 }
 
-img {
+.beginning-img img {
  max-width: 50vw;
 }
 
@@ -63,7 +59,7 @@ img {
 
 /* NAVIGATION BAR STYLING */
 .nav-bar img {
-  width: 50px;
+  width: 75px;
 }
 
 .nav-bar {
@@ -72,7 +68,7 @@ img {
 }
 
 .nav-bar h1 {
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0rem;
   padding: 0;
 }
 
@@ -282,7 +278,7 @@ div.what-materials li.what-materials .nav-link{
 }
 
 /* FIND BRANDS PAGE */
-.find-brands h1, .find-brands .brands-container, .checklist h1 {
+.find-brands-header, .find-brands .brands-container, .checklist-header {
   margin: 1rem;
 }
 
@@ -347,7 +343,7 @@ div.what-materials li.what-materials .nav-link{
 }
 
 /* FIND STYLES PAGE STYLING */
-.find-styles {
+.find-styles-page {
   margin-left: 1rem;
 }
 

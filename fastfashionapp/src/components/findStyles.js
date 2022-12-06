@@ -18,7 +18,7 @@ export default function FindStyles(props) {
         return (
             <button type="button" className="style-button" onClick={handleClick}>
                 <div className="style-selection">
-                    <img src={genre.img} alt={genre.alt}></img>
+                    <img key={genre.style} src={genre.img} alt={genre.alt}></img>
                 </div>
             </button>
         )
@@ -40,11 +40,13 @@ export default function FindStyles(props) {
     return (
         <div className="find-styles">
             <Navigation />
-            <h1 className="px-5">What style are you looking for?</h1>
+            <div className="find-styles-page">
+            <h1 className="px-5 find-styles-header">What style are you looking for?</h1>
             <div className="style-container">
                  {GenreList}
             </div>
             <Footer />
+            </div>
         </div>
     );
 }

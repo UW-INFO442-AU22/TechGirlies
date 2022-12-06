@@ -55,8 +55,8 @@ export default function Navigation(props){
         <header>
             <nav className="nav-bar">
                 <div className="nav-logo">
-                <img className="logo-img" src="/img/logo2.png" alt="logo"></img>
-                <h1>Conscious</h1>
+                    <img className="logo-img" src="/img/logo2.png" alt="logo"></img>
+                    <h1>Conscious</h1>
                 </div>
                 <button onClick={handleClick} type="button" className="hamburger-menu" alt="hamburger menu button. three horizontal lines stacked on eachother. once clicked to open the navigation options, hamburgermenu transitions to an X indicating to click again to leave navigation">
                     {navbarOpen ? ( // conditional stying to either show a hamburger menu or a close menu depending on whether or not user has opened the navigation menu
