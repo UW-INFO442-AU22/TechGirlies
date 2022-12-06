@@ -40,7 +40,7 @@ export default function FindStyles(props) {
     return (
         <div className="find-styles">
             <Navigation />
-            <h1>What style are you looking for?</h1>
+            <h1 className="px-5">What style are you looking for?</h1>
             <div className="style-container">
                  {GenreList}
             </div>

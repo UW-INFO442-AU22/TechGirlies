@@ -23,7 +23,11 @@ h2 {
 }
 
 .nav-logo h1, h2, h3, h3, h4, h5, h6 {
-  font-family: 'Montserrat';
+  font-family: 'Lato';
+}
+
+h3 {
+  font-weight: bold;
 }
 
 body {
@@ -137,6 +141,7 @@ div.what-materials li.what-materials .nav-link{
 
 .beginning-text{
   margin-left: 2rem;
+  padding-right: 5rem;
 }
 
 .lead{
@@ -195,7 +200,13 @@ div.what-materials li.what-materials .nav-link{
 .impact-container {
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.impact img{
+  margin-bottom: 0.5rem;
 }
 
 .impact {
@@ -229,7 +240,11 @@ div.what-materials li.what-materials .nav-link{
 }
 
 
-.reason img, .reason div {
+.reason img{
+  max-width: 30vw;
+}
+
+.reason div {
   max-width: 35vw;
 }
 
@@ -345,7 +360,7 @@ div.what-materials li.what-materials .nav-link{
 .style-container {
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 /* GENRE PAGE STYLING */
@@ -388,7 +403,7 @@ div.what-materials li.what-materials .nav-link{
 }
 
 .rec {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 /* CHEKCLIST PAGE */
@@ -398,12 +413,18 @@ div.what-materials li.what-materials .nav-link{
 
 .checklist-start  {
   flex-wrap: wrap;
+
 }
+
 .checklist-item {
   flex: 50%;
-  padding-left: 20px;
+  padding: 2.5rem;
+  justify-content: space-around;
+}
+
+.checklist-item h3{
   padding-top: 1rem;
-  width: 30%;
+  padding-bottom: 1rem;
 }
 /* FIND STYLES */
 .genre-container {
@@ -419,7 +440,12 @@ div.what-materials li.what-materials .nav-link{
 
 /* MATERIALS PAGE */
 .materials-diagram {
-  width: 20vh;
+  height: 15vh;
+  max-width: 20vh;
+}
+
+.reasons{
+  margin-bottom: 2rem;
 }
 
 

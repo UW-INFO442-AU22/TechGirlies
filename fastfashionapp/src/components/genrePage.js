@@ -60,7 +60,7 @@ export default function GenrePage(props) {
             <Navigation />
             <div className="indv-genre-info" key={style.style}>
                 <div className="genre-header">
-                    <h1>These brands have {style.style} clothing:</h1>
+                    <h1 className="px-5">These brands have {style.style} clothing:</h1>
                     <Link to="/find-styles" type="button" id="back-button">
                         <img src="/img/backArrow.png" className="genre-img" alt="back arrow serving as a button"/>
                     </Link>

@@ -74,7 +74,7 @@ export default function FindBrands(props) {
     return(
         <div className="find-brands">
             <Navigation />
-            <h1>Sustainable Brands</h1>
+            <h1 className="px-5">Sustainable Brands</h1>
             <div className="search-bar">
                 <input type="text" placeholder="Brand Name" onChange={handleChange} value={searchInput}/>
             </div>
