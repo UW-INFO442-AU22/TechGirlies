@@ -8,8 +8,13 @@
 .nav-logo h1 {
   font-size:calc(12px + 1vw);
   font-weight: bold;
-  
 }
+
+.logo-img{
+  width: 150%;
+}
+
+
 .nav-link{
   color:rgba(0, 0, 0)
 }
